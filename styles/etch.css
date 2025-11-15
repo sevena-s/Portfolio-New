@@ -1,0 +1,238 @@
+body{
+    background-image: url("../images/etch-page/etch-page.png");
+    background-size: 200rem 12rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p{
+    font-size: 1.1rem;
+    font-family: Outfit-exLit;
+    line-height: 1.75rem;
+}
+
+.content{
+    margin: 2rem 3.5rem 2rem 4rem;
+}
+
+/* Top Intro */
+.top-intro{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.brief{
+    max-width: 40rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.title{
+    font-family: Outfit-reg;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.context{
+    margin-bottom: 0;
+}
+
+.tools-title{
+    margin-top: 3rem;
+    margin-left: 0;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.tools-text{
+    font-family: Jet-Light;
+    font-size: 1rem;
+}
+
+.tools-main-title{
+    font-size: 1.2rem;
+}
+
+.gif-container{
+    display: flex;
+    max-width: 35rem;
+    min-width: 35rem;
+    max-height: 30rem;
+}
+
+.gif{
+    border-radius: 1rem;
+    border: 2px solid #F1ABA7;
+}
+
+.links{
+    display: flex;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.link{
+    background-color: #F1ABA7;
+    max-width: 11rem;
+    min-width: 7rem;
+    transition-duration: 0.5s;
+    margin-left: 10%;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.link-text{
+    color: black;
+    font-family: Jet-exLight;
+    font-size: 1rem;
+}
+
+.link:hover, .link:focus{
+    transform: scale(1.04);
+}
+
+.oden-link{
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    text-decoration-color: black;
+    text-underline-offset: 0.1rem;
+    transition-duration: 0.5s;
+}
+
+.oden-link:hover, .oden-link:focus{
+    text-decoration-color: #F3B6B1;
+    color: #F3B6B1;
+}
+
+/* Project Details */
+
+.project-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.details-title{
+    margin-left: 0;
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-family: Outfit-exLit;
+}
+
+/* Process Analysis */
+
+.analysis{
+    margin: 3rem 5rem 0 5rem;
+}
+
+.process-text{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 45rem;
+}
+
+.process-title{
+    margin-top: 3rem;
+    font-size: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.sub-title{
+    font-family: Jet-exLight;
+    font-size: 1.1rem;
+    margin: 0 0 2.5rem 0;
+}
+
+.second-title{
+    margin-top: 3rem;
+}
+
+.code-text{
+    max-width: 45rem;
+    font-size: 1.1rem;
+    font-family: Outfit-exLit;
+    line-height: 1.75rem;
+    margin: auto;
+}
+
+
+
+@media(max-width: 66.4rem){
+
+    .context, .code-text{
+        max-width: 40rem;
+    }
+
+    .gif-container{
+        margin: auto;
+        max-width: 40rem;
+        max-height: 35rem;
+    }
+
+    .top-intro{
+        flex-direction: column-reverse;
+    }
+
+    .brief{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+    }
+
+    .links{
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 43.4rem){
+    .gif-container{
+        min-width: 20rem;
+    }
+
+    .top-intro{
+        gap: 1.5rem;
+    }
+
+    .brief{
+        margin-bottom: 1rem;
+    }
+
+    .content{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media(max-width: 28rem){
+
+    .links{
+        flex-direction: column;
+    }
+
+    .link{
+        margin-left: 0;
+        min-width: 11rem;
+    }
+
+    .gif-container{
+        min-width: 15rem;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+}
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/jewelry.css">
+    <title>Jewelry-Project</title>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="menu">
+        <a href="../index.html" class="logo-link">
+            <div class="logo">
+                <img src="../images/global/logo.png" class="image" width="234" height="216" alt="Link to portfolio homepage">
+            </div>
+        </a>
+        <div class="menu-links">
+            <a href="../index.html#projects" class="menu-link">Projects</a>
+            <a href="../index.html#about" class="menu-link">About</a>
+            <a href="../index.html#contact" class="menu-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- Project Top Info -->
+        <div class="top-intro">
+            <div class="brief">
+                <h1 class="title">Jewelry Ecommerce Website</h1>
+                <p class="context">Designed and developed a mock product website for selling South-Asian jewelry,
+                    completed during a
+                    class at SFU for Web Development and Design. This project was done in a team of two with Lina
+                    Dang-Nguyen.</p>
+                <p class="context">Coming from a computer science background, my personal goal for this project was to
+                    combine my skill
+                    in programming with my passion for design.</p>
+                <div class="links">
+                    <a href="https://www.sfu.ca/siat/student_projects/iat339_2022/seve/P2-Team11/index.html"
+                        class="link image">
+                        <p class="link-text">View Site</p>
+                    </a>
+                    <a href="https://github.sfu.ca/iat339/P2-Team11" class="link image">
+                        <p class="link-text">Github</p>
+                    </a>
+                </div>
+                <div class="project-details">
+                    <div>
+                        <h2 class="details-title">Roles</h2>
+                        <p class="tools-text">Front-End Developer - UX/UI Designer</p>
+                    </div>
+                    <div>
+                        <h2 class="details-title">Tools</h2>
+                        <p class="tools-text">HTML - CSS - Figma - Git</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gif-container">
+                    <picture>
+                        <source
+                            srcset="
+                                ../images/jewelry-page/jewelry-gif600.gif  1500w,
+                                ../images/jewelry-page/jewelry-gif.gif  2400w
+                            "
+                            media="(min-width: 30rem)"
+                            class="image"
+                        />
+                        <img
+                            src="../images/jewelry-page/jewelry-gif.gif"
+                            width="800"
+                            height="466"
+                            class="image gif"
+                            alt="Gif of user scrolling through the jewelry websites homepage"> 
+                    </picture>
+            </div>
+        </div>
+        <!-- Project Analysis -->
+        <div class="analysis">
+            <!-- Ideation -->
+            <div class="process-text">
+                <h2 class="process-title">Ideation</h2>
+                <h3 class="sub-title highlight">Coming up with the Idea</h3>
+                <p class="code-text">The goal of the project was to create a responsive ecommence site for any fictional
+                    company of choice. When brainstorming art directions and company ideas, I came up with the idea to
+                    create a website that sells South-Asian jewelry as I noticed a lack of trendy and chic website
+                    designs for Indian jewelry. A lot of websites on the current web were dated and lacked a cohesive
+                    design.</p>
+            </div>
+            <div class="design">
+                <!-- Challenges -->
+                <div class="process-text">
+                    <h2 class="process-title">Challenges</h2>
+                    <h3 class="sub-title highlight2">Designing a modern site for traditional jewelry</h3>
+                    <p class="code-text">There were many challenges that came when designing the UI and making design
+                        aesthetic
+                        decisions. I wanted the keep the site simple and modern which is challenging as
+                        Indian
+                        jewelry is very extravagant, colourful and traditional. To work with this contrast, I made sure
+                        UI
+                        elements took from both the traditional and modern side. For example, the main body font of the website is simple and modern
+                        but
+                        its
+                        paired with traditional indian bridal colours (dark red and gold). Below is the style guide I
+                        created for some of the design elements.
+                    </p>
+                </div>
+                <div class="style-guide">
+                    <p class="style-title">Style Guide</p>
+                    <div class="style-guide-wrapper">
+                        <img src="../images/jewelry-page/style-guide1.png" class="image guide-img" width="1331" height="1597"
+                            alt="Style guide with logo, fonts and colours">
+                        <img src="../images/jewelry-page/style-guide2.png" class="image guide-img" width="1331" height="1597"
+                            alt="Style guide with elements and images">
+                    </div>
+                </div>
+                <div class="process-text">
+                    <h3 class="sub-title second-title highlight3">Starting responsive</h3>
+                    <p class="code-text">This was my first time working with responsive web design techniques where I
+                        quickly
+                        learned the importance of starting responsive. Some initial designs and layouts looked great in
+                        Figma
+                        and on a large screen size, but when taking a small mobile screen into consideration, the design
+                        was
+                        not
+                        an efficient use of space. Due to this, my teammate and I had to refactor some design decisions
+                        to
+                        allow
+                        for a more seamless transition between screen sizes. Below is my product page design for different screen sizes.
+                    </p>
+                </div>
+            </div>
+            <div class="responsive-photos">
+                <div class="responsive-item">
+                    <img src="../images/jewelry-page/browser-pic.png" class="image browser-pic" width="1743" height="1238"
+                        alt="screenshot of websites product page for browsers">
+                    <p class="sub-title img-txt">Browser Layout</p>
+                </div>
+                <div class="responsive-item">
+                    <img src="../images/jewelry-page/mobile-pic.png" class="image mobile-pic" width="821" height="1282"
+                        alt="screenshot of websites product page for mobiles">
+                    <p class="sub-title img-txt">Mobile Layout</p>
+                </div>
+            </div>
+            <div class="process-text">
+                <h3 class="sub-title second-title highlight3">Coding Media Queries</h3>
+                <p class="code-text">I previously had some experience with CSS media queries, but when I used them my
+                    websites had harsh transitions between screen sizes. For this project, I learned how to
+                    effectively
+                    use CSS media queries in combination with adaptive layouts. I was able to have my layouts gradually
+                    scale with the screen to allow for a more fluid website. Below, is a video of my product page
+                    layout I developed,
+                    where you can see a smooth transition between responsive breakpoints.
+                </p>
+            </div>
+            <div class="res-gif-wrapper">
+                <img src="../images/jewelry-page/responsive-gif.gif" class="image res-gif" width="800" height="528"
+                    alt="Gif of website page going from browser to mobile size">
+                <p class="sub-title img-txt">Responsive Layout</p>
+            </div>
+        </div>
+        <!-- Reflection -->
+        <div class="process-text">
+            <h2 class="process-title">Reflection</h2>
+            <h3 class="sub-title highlight4">Combining Development with Design</h3>
+            <p class="code-text">With a strong computer science background, I usually don’t combine the coding and
+                design aspect of my projects, I usually focus on one at a time. During this project, I got to
+                experience
+                combining both the design and code simultaneously. 
+                After completing this project, I'm more confident in my web development
+                and design skills. I learned how important responsive web design is and how to more efficiently create web applications. 
+            </p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="contact">
+            <div class="contact-text">
+                <h2 class="footer-title">Feel free to reach me!</h2>
+                <a href="mailto:sevenas@sfu.ca" class="social-link">sevenas@sfu.ca</a>
+            </div>
+            <div class="cloud-wrapper">
+                <img src="../images/global/cloudy.gif" class="image" width="453" height="436"
+                    alt="Gif of a cartoon cloud with sparkles">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

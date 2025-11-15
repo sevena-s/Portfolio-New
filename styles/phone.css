@@ -1,0 +1,214 @@
+body{
+    background-image: url("../images/phonebook-page/phone-back.png");
+    background-size: 200rem 12rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p{
+    font-size: 1.1rem;
+    font-family: Outfit-exLit;
+    line-height: 1.75rem;
+}
+
+.content{
+    margin: 2rem 3.5rem 2rem 4rem;
+}
+
+/* Top Intro */
+.top-intro{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.brief{
+    max-width: 40rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.title{
+    font-family: Outfit-reg;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.context{
+    margin-bottom: 0;
+}
+
+.tools-title{
+    margin-top: 3rem;
+    margin-left: 0;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.tools-text{
+    font-family: Jet-Light;
+    font-size: 1rem;
+}
+
+.tools-main-title{
+    font-size: 1.2rem;
+}
+
+.gif-container{
+    display: flex;
+    max-width: 35rem;
+    min-width: 35rem;
+    max-height: 22rem;
+}
+
+.gif{
+    border-radius: 0.5rem;
+    border: 2px solid #a3bd9a;
+}
+
+.links{
+    display: flex;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.link{
+    background-color: #a3bd9a;
+    max-width: 11rem;
+    min-width: 7rem;
+    transition-duration: 0.5s;
+    margin-left: 10%;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.link-text{
+    color: white;
+    font-family: Jet-exLight;
+    font-size: 1rem;
+}
+
+.link:hover, .link:focus{
+    transform: scale(1.04);
+}
+
+.oden-link{
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    text-decoration-color: black;
+    text-underline-offset: 0.1rem;
+    transition-duration: 0.5s;
+}
+
+.oden-link:hover, .oden-link:focus{
+    text-decoration-color: #F3B6B1;
+    color: #F3B6B1;
+}
+
+/* Project Details */
+
+.project-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.details-title{
+    margin-left: 0;
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-family: Outfit-exLit;
+}
+
+/* Temp gif section */
+
+.temp-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.gif-container-project{
+    display: flex;
+    max-width: 45rem;
+    min-width: 45rem;
+    max-height: 32rem;
+}
+
+@media(max-width: 66.4rem){
+
+    .context, .code-text{
+        max-width: 40rem;
+    }
+
+    .gif-container{
+        margin: auto;
+        max-width: 40rem;
+        max-height: 35rem;
+    }
+
+    .top-intro{
+        flex-direction: column-reverse;
+    }
+
+    .brief{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+    }
+
+    .links{
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 43.4rem){
+    .gif-container{
+        min-width: 20rem;
+    }
+
+    .top-intro{
+        gap: 1.5rem;
+    }
+
+    .brief{
+        margin-bottom: 1rem;
+    }
+
+    .content{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media(max-width: 28rem){
+
+    .links{
+        flex-direction: column;
+    }
+
+    .link{
+        margin-left: 0;
+        min-width: 11rem;
+    }
+
+    .gif-container{
+        min-width: 15rem;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+}

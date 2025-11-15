@@ -1,0 +1,659 @@
+@font-face {
+    font-family: Outfit-reg;
+    src: url(./fonts/Outfit-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: Outfit-med;
+    src: url(./fonts/Outfit-Medium.woff2) format('woff2');
+}
+@font-face {
+    font-family: Outfit-bold;
+    src: url(./fonts/Outfit-Bold.woff2) format('woff2');
+}
+@font-face {
+    font-family: Outfit-lit;
+    src: url(./fonts/Outfit-Light.woff2) format('woff2');
+}
+@font-face {
+    font-family: Outfit-exLit;
+    src: url(./fonts/Outfit-ExtraLight.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Jet-reg;
+    src: url(./fonts/JetBrainsMono-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Jet-Light;
+    src: url(./fonts/JetBrainsMono-Light.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Jet-exLight;
+    src: url(./fonts/JetBrainsMono-ExtraLight.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Jet-thin;
+    src: url(./fonts/JetBrainsMono-Thin.woff2) format('woff2');
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    display: block;
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: normal;
+    font-size: 4.5rem;
+}
+
+body{
+    font-family: Outfit-lit;
+    margin: 0;
+}
+
+.image{
+    height: auto;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Classes for Different Fonts */
+
+.body-text{
+    font-family: Outfit-exlit;
+    font-size: 1.15rem;
+    line-height: 1.9rem;
+}
+
+.titles-text{
+    font-family: Outfit-reg;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.sub-title-text{
+    font-family: Jet-exLight;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    max-width: 35rem;
+    margin-bottom: 0;
+}
+
+/* Menu */
+
+.logo-link{
+    margin: 1% 0 1% 1%;
+    transition-duration: 0.5s;
+}
+
+.logo-link:hover, .logo-link:focus{
+    transform: scale(1.2);
+}
+
+.logo{
+    max-width: 4rem;
+}
+
+.menu{
+    font-family: Jet-exLight;
+    font-size: 1rem;
+    word-spacing: 1rem;
+    display: flex;
+    align-items: end;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    z-index: 9999;
+    background-color: white;
+}
+
+.menu-links{
+    margin-left: auto;
+    margin-right: 4rem;
+    margin-bottom: 1%;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-link{
+    transition-duration: 0.5s;
+}
+
+.menu-link:hover, .menu-link:focus{
+    color: #F3B6B1;
+}
+
+/* CONTENT */
+
+.content{
+    margin: 0;
+}
+
+/* Intro */
+
+.heading-description{
+    background-image: url("./images/home-page/background.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 10rem;
+}
+
+.intro,.intro-paragraph{
+    margin: 3.5rem 3.5rem 0 3.5rem;
+}
+
+.intro{
+    max-width: 60rem;
+    line-height: 5rem;
+}
+
+.name{
+    font-family: Outfit-bold;
+    margin-bottom: 0;
+}
+
+.dev-text{
+    margin-top: 0;
+}
+
+.intro-paragraph{
+    margin-top: 3.5rem;
+}
+
+/* About */
+
+.about{
+    margin: 0 auto 0 auto;
+    padding-bottom: 13rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/home-page/tools-background.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.about-content{
+    display: flex;
+    gap: 3rem;
+    margin: 4rem 3rem 0 0;
+}
+
+.profile-container{
+    background-color: #D7B9B6;
+    position: relative;
+    width: 34rem;
+    height: 24rem;
+    padding-left: 3rem;
+}
+
+.profile-wrapper{
+    max-width: 35rem;
+    min-width: 15rem;
+    position: absolute;
+    top: -15%;
+}
+
+.about-description{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.about-paragraph{
+    max-width: 40rem;
+    margin-top: 0.75rem;
+}
+
+.compsci-text{
+    font-family: Outfit-reg;
+}
+
+.git-link{
+    border-bottom: 1px solid black;
+    transition-duration: 0.5s;
+    font-family: Outfit-lit;
+}
+
+.git-link:hover, .git-link:focus{
+    color: #F3B6B1;
+    border-bottom: 1px solid #F3B6B1;
+}
+
+/* Text Animation */
+
+.hobby-text{
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.extra-about{
+    margin: 0;
+}
+
+.swap-text{
+    font-family: Jet-Light;
+    margin: 0;
+}
+
+.swap-text:after{
+    content: "video games 🎮";
+    color: #727272;
+    animation: swap 10s infinite;
+}
+
+/* Reference: https://stackoverflow.com/questions/42236440/change-text-with-a-css3-animation */
+@keyframes swap {
+    20%{
+        content: "video games 🎮";
+        color: #727272;
+    }
+    40%{
+        content: "coffee ☕️";
+        color: #816345;
+    }
+    60%{
+        content: "dogs 🐕";
+        color: #E5AD66;
+    }
+    80%{
+        content: "fashion 👗";
+        color: #37D7C4;
+    }
+    100%{
+        content: "make-up 💄";
+        color: #F96C78;
+    }
+
+}
+
+/* Toolbox */
+
+.tools-title{
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+.tools-description{
+    margin: 0;
+}
+
+.toolsbox-container{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.list-container{
+    display: flex;
+    gap: 4rem;
+}
+
+.tools-list{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 10.2rem;
+}
+
+.tool-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.tool-wrapper{
+    max-width: 5rem;
+}
+
+.tool-text{
+    font-family: Jet-Light;
+    margin-top: 0;
+}
+
+/* Projects */
+
+.project-title-container{
+    margin-left: 5rem;
+}
+
+.projects-list{
+    margin: 5rem 3rem 0 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+}
+
+.project-link{
+    width: 100%;
+    max-width: 68rem;
+}
+
+.project-item1{
+    background-color: #F7EEDE;
+}
+
+.project-item2{
+    background-color: #EDF5DF;
+}
+
+.project-item3{
+    background-color: #FFE9C3;
+}
+
+.project-item1, .project-item2, .project-item3{
+    border-radius: 4rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    transition-duration: 0.5s;
+    min-height: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.project-text{
+    margin-left: 1rem;
+    max-width: 30rem;
+    transition-duration: 0.5s;
+}
+
+.project-img-wrapper{
+    max-width: 35rem;
+    transition-duration: 0.5s;
+}
+
+.proj-img{
+    border-radius: 2rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+
+.project-link:hover div, .project-link:focus div{
+    background-color: #f0f0f0;
+    transform: scale(1.01);
+}
+
+/* Footer */
+
+.foot{
+    background-color: #FAEBE7;
+}
+
+.contact{
+    display: flex;
+    gap: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+    justify-content: center;
+}
+
+.cloud-wrapper{
+    max-width: 6rem;
+    margin-top: 2rem;
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title{
+    font-size: 1.25rem;
+}
+
+.social-link{
+    transition-duration: 0.5s;
+    border-bottom: 1px solid black;
+    font-family: Jet-exLight;
+}
+
+.social-link:hover, .social-link:focus{
+    color: #F3B6B1;
+    border-bottom: 1px solid #F3B6B1;
+}
+
+.copywrite{
+    text-align: center;
+    font-family: Jet-exLight;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+
+/* Media */
+
+/* For Larger Screens */
+
+@media(min-width: 112rem){
+    .heading-description{
+        padding-bottom: 5rem;
+    }
+}
+
+@media(min-width: 90rem){
+    .about-paragraph{
+        max-width: 65rem;
+    }
+
+    .profile-container{
+        width: 40rem;
+    }
+}
+
+/* For Small Screens */
+
+@media(max-width: 81rem){
+
+    .hobby-text{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 69rem){
+
+    .profile-container{
+        height: 18rem;
+    } 
+    .profile-container{
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 54.5rem){
+
+    .heading-description{
+        padding-bottom: 5rem;
+    }
+
+    .about-content{
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .profile-container{
+        width: 100%;
+    }
+
+    .profile-wrapper{
+        top: -12%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        max-width: 25rem;
+        min-width: 15rem;
+    }
+
+    .hobby-text{
+        flex-direction: row;
+    }
+
+    .about-description{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .about-paragraph{
+        max-width: none;
+    }
+
+    .tools-title{
+        margin-left: 3rem;
+    }
+
+    .tool-wrapper{
+        max-width: 3.5rem;
+    }
+
+    .toolsbox-container, .list-container{
+        gap: 1rem;
+    }
+
+    .project-item1, .project-item3{
+        flex-direction: column-reverse;
+    }
+
+    .project-item2{
+        flex-direction: column;
+    }
+
+    .project-item1, .project-item2, .project-item3{
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .projects-list{
+        margin: 3rem 5% 0 5%;
+    }
+
+    .project-text{
+        margin-top: 1rem;
+    }
+
+    .about{
+        padding-bottom: 6rem;
+    }
+
+}
+
+@media(max-width: 46rem){
+
+    .toolsbox-container{
+        flex-direction: column;
+    }
+
+    .list-container{
+        gap: 5rem;
+    }
+}
+
+@media(max-width: 37rem){
+
+    .hobby-text{
+        flex-direction: column;
+    }
+
+    .intro,.intro-paragraph{
+        margin: 3.5rem 2rem 0 2rem;
+    }
+
+    .footer-title, .social-link{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 29.25rem){
+
+    .profile-container{
+        height: 16rem;
+    }
+
+    .list-container{
+        gap: 1rem;
+    }
+
+    .tool-text{
+        font-size: 0.7rem;
+    }
+
+    .tool-wrapper{
+        max-width: 2.5rem;
+    }
+
+    .tools-list{
+        width: 8rem;
+    }
+
+    .tools-title{
+        margin: 4rem 1rem 0 1rem
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .intro{
+        line-height: 3.5rem;
+    }
+
+    .intro-paragraph{
+        margin-top: 2rem;
+    }
+
+    .body-text{
+        font-size: 1rem;
+    }
+
+    .sub-title-text{
+        font-size: 0.9rem;
+    }
+
+    .titles-text{
+        font-size: 1.5rem;
+    }
+
+    .cloud-wrapper{
+        max-width: 4rem;
+    }
+
+    .about-description, .project-title-container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .menu-links{
+        flex-direction: column;
+        gap: 0.25rem;
+        margin-right: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .project-img-wrapper{
+        max-width: 20rem;
+    }
+}
